@@ -1,0 +1,59 @@
+body {
+    margin: auto;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Changed background color to a light gray for a clean look */
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333; /* Changed color to a dark gray for better contrast */
+    font-size: 24px; /* Increased font size for better readability */
+}
+
+.resume-builder {
+    max-width: 90%; /* Changed to make it responsive */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff; /* Changed background color to white for a clean look */
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Added border radius for a modern look */
+}
+
+.resume-builder__header {
+    margin-bottom: 20px;
+}
+
+.resume-builder__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-builder__section {
+    margin-bottom: 20px;
+}
+
+.resume-builder__field {
+    margin-bottom: 10px;
+}
+
+.resume-builder__field label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666; /* Changed color to a dark gray for better contrast */
+}
+
+.resume-builder__field input, .resume-builder__field textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Added border radius for a modern look */
+}
+
+.resume-builder__field textarea {
+    height: 100px;
+}
+

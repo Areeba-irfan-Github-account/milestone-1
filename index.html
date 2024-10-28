@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume-Builder(ml-1)</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div>
+        <h1 class="heading">Static Resume Builder</h1>
+        <div class="resume-builder">
+            <div class="resume-builder__header">
+                <input type="file" id="profile-picture" name="profile-picture" accept="image/*">
+            </div>
+            <div class="resume-builder__container">
+                <div class="resume-builder__section">
+                    <h2>Personal Information</h2>
+                    <div class="resume-builder__field">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="resume-builder__field">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="resume-builder__field">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+                <div class="resume-builder__section">
+                    <h2>Education</h2>
+                    <div class="resume-builder__field">
+                        <label for="degree">Degree:</label>
+                        <input type="text" id="degree" name="degree">
+                    </div>
+                    <div class="resume-builder__field">
+                        <label for="university">University:</label>
+                        <input type="text" id="university" name="university">
+                    </div>
+                    <div class="resume-builder__field">
+                        <label for="graduation-year">Graduation Year:</label>
+                        <input type="number" id="graduation-year" name="graduation-year">
+                    </div>
+                </div>
+                <div class="resume-builder__section">
+                    <h2>Skills</h2>
+                    <div class="resume-builder__field" id="skills">
+                        <label for="skills">Skills:</label>
+                        <input type="text" id="skills" name="skills" placeholder="e.g. HTML, CSS, JavaScript">
+                    </div>
+                    <button class="toggle-skills" id="toggle-skills" onclick="toggleSkills()">Hide Skills</button>
+                </div>
+                <div class="resume-builder__section">
+                    <h2>Experience</h2>
+                    <div class="resume-builder__field">
+                        <label for="job-title">Job Title:</label>
+                        <input type="text" id="job-title" name="job-title">
+                    </div>
+                    <div class="resume-builder__field">
+                        <label for="company">Company:</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <div class="resume-builder__field">
+                        <label for="job-description">Job Description:</label>
+                        <textarea id="job-description" name="job-description"></textarea>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+
+</html>
