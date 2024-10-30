@@ -1,21 +1,27 @@
 body {
     margin: auto;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Changed font to Roboto for a modern look */
     background-color: #f4f4f4; /* Changed background color to a light gray for a clean look */
+    font-size: 16px; /* Added font size for better readability */
+    line-height: 1.5; /* Added line height for better readability */
 }
 
-.heading{
+.heading, .submit-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #333; /* Changed color to a dark gray for better contrast */
-    font-size: 24px; /* Increased font size for better readability */
+    color: #506D9E; /* Changed color to a dark blue for better contrast and consistency */
+    font-size: xx-large; /* Increased font size for better readability */
+    font-weight: bold; /* Added font weight for better readability */
+}
+.header{
+    border-bottom: 2px solid #1f65f0; /* Added line below headings in specified color */
 }
 
 .resume-builder {
     max-width: 90%; /* Changed to make it responsive */
-    margin: 40px auto;
-    padding: 20px;
+    margin: 20px auto; /* Adjusted margin for better spacing */
+    padding: 30px; /* Adjusted padding for better spacing */
     background-color: #fff; /* Changed background color to white for a clean look */
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -38,22 +44,167 @@ body {
 .resume-builder__field {
     margin-bottom: 10px;
 }
-
+.heading2{
+    color:#1F1F1F;
+}
+.labl{
+    color: #666;
+}
 .resume-builder__field label {
     display: block;
     margin-bottom: 5px;
-    color: #666; /* Changed color to a dark gray for better contrast */
+    margin-right: 0px;
+    /* Changed color to a dark gray for better contrast */
+    text-align: left; /* Align label text to the left */
+    font-weight: bold; /* Added font weight for better readability */
 }
 
 .resume-builder__field input, .resume-builder__field textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 5px; /* Standardized padding for all inputs */
+    margin: 0px 0px 5px 2px; /* Standardized margin for all inputs */
     border: 1px solid #ccc;
     border-radius: 5px; /* Added border radius for a modern look */
+    font-size: 16px; /* Added font size for better readability */
 }
 
 .resume-builder__field textarea {
     height: 100px;
 }
 
+/* Added styles for education section */
+.resume-builder__education,
+.resume-builder__education-item,
+.resume-builder__education-item span,
+.resume-builder__education-item span span {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.resume-builder__education {
+    flex-direction: column;
+}
+
+.resume-builder__education-item {
+    justify-content: space-between;
+}
+
+.resume-builder__education-item span:first-child {
+    margin-right: 10px;
+}
+
+.resume-builder__education-item span:last-child {
+    flex-grow: 1;
+}
+
+.resume-builder__education-item span:last-child span:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 768px) {
+    .resume-builder__education,
+    .resume-builder__education-item {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align all items to the left */
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .resume-builder__education-item span {
+        margin: 0; /* Reset margin for better alignment */
+    }
+}
+
+/* Extra small screen styling */
+@media (max-width: 480px) {
+    .resume-builder__education,
+    .resume-builder__education-item {
+        margin: 2px;
+        padding: 2px;
+        align-items: flex-start; /* Ensure left alignment on extra small screens */
+    }
+
+    .resume-builder__education-item span {
+        font-size: 14px; /* Smaller font size for readability */
+        margin: 0; /* Reset margin */
+    }
+}
+
+/* Added styles for skill section */
+.resume-builder__skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+.skil{
+    border-bottom: 2px solid #3D4D6D;
+}
+
+.resume-builder__skill-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.resume-builder__skill-item input[type="checkbox"] {
+    margin-right: 5px; /* Adds space between checkbox and label */
+    vertical-align: middle;
+}
+
+.resume-builder__skill-item span {
+    color: #666;
+    vertical-align: middle;
+}
+
+/* Make it responsive on small screens */
+@media (max-width: 768px) {
+    .resume-builder__skill {
+        flex-direction: column;
+        gap: 5px;
+        margin: 5px;
+    }
+    .resume-builder__skill-item {
+        padding: 3px;
+        flex-direction: row; /* Keeps checkbox and label in a row on small screens */
+    }
+    .resume-builder__skill-item input[type="checkbox"] {
+        margin-right: 3px;
+    }
+    .resume-builder__skill-item span {
+        font-size: 15px;
+    }
+}
+
+/* Make it responsive on extra small screens */
+@media (max-width: 480px) {
+    .resume-builder__skill {
+        gap: 2px;
+        margin: 2px;
+    }
+    .resume-builder__skill-item {
+        padding: 2px;
+    }
+    .resume-builder__skill-item span {
+        font-size: 14px;
+    }
+}
+.submit-button {
+    background-color: #1f65f0;
+    color: #fff;
+    font-size: large;
+    padding: 8px 9px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #3D4D6D; /* Changed background color to a dark blue for consistency */
+}

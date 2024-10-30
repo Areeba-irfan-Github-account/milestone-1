@@ -17,45 +17,228 @@
             </div>
             <div class="resume-builder__container">
                 <div class="resume-builder__section">
-                    <h2>Personal Information</h2>
+                    <h2 class="header">Personal Information</h2>
                     <div class="resume-builder__field">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name">
                     </div>
+                    
                     <div class="resume-builder__field">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email">
                     </div>
                     <div class="resume-builder__field">
+                        <label for="Address">Address:</label>
+                        <input type="text" id="Address" name="Address">
+                    </div>
+                    <div class="resume-builder__field">
                         <label for="phone">Phone:</label>
                         <input type="tel" id="phone" name="phone">
+                    
                     </div>
+
+                    
+                   
                 </div>
                 <div class="resume-builder__section">
-                    <h2>Education</h2>
-                    <div class="resume-builder__field">
-                        <label for="degree">Degree:</label>
-                        <input type="text" id="degree" name="degree">
+                    <h2 class="header">Education</h2>
+                    <div class="resume-builder__education-item">
+                        <div class="resume-builder__field">
+                            <label for="higher-degree" class="heading2">Ph.D (if applicable):</label>
+                            
+                        </div>
+                        <div class="resume-builder__field">
+                            <label for="subject" class="labl">Subject:</label>
+                            <select id="subject" name="subject">
+                                <option value="">Select:</option>
+                                <option value="Engineering and Technology">Engineering and Technology</option>
+                                <option value="natural-sciences">Natural Sciences</option>
+                                <option value="Computer-Science-and-IT">Computer Science and IT</option>
+                                <option value="Social Sciences">Social Sciences</option>
+                            </select>
+                        </div>
+
+                        <div class="resume-builder__field">
+                            <label for="university-name" class="labl">University Name:</label>
+                            <select id="university-name" name="university-name">
+                                <option value="">Select</option>
+                                <option value="FAST">Fast</option>
+                                <option value="NUST">NUST</option>
+                                <option value="DOW">DOW</option>
+                                <option value="KU">KU</option>
+                                <option value="Quaid-i-Azam University">Quaid-i-Azam University</option>
+
+                            </select>
+                        </div>
+                        <div class="resume-builder__field">
+                            <label for="graduation-year" class="labl">Year of Completion:</label>
+                            <select id="graduation-year" name="graduation-year">
+                                <option value="">Select</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                            </select>
+                        </div>
+                        
                     </div>
-                    <div class="resume-builder__field">
-                        <label for="university">University:</label>
-                        <input type="text" id="university" name="university">
+
+                    <div class="resume-builder__education-item">
+                        <div class="resume-builder__field">
+                            <label for="master-degree" class="heading2">Master's Degree</label>
+                        </div>
+                        <div class="resume-builder__field" >
+                            <label for="subject" class="labl">Subject:</label>
+                            <select id="subject" name="subject">
+                                <option value="">Select:</option>
+                                <option value="Engineering-Technology">Engineering and Technology</option>
+                                <option value="computer-science">Computer-Science</option>
+                                <option value="biology">Biology</option>
+                                <option value="business">Business</option>
+                                <option value="literature">Literature</option>
+                            </select>
+                        </div>
+                        <div class="resume-builder__field" class="labl">
+                            <label for="university-name" class="labl">University Name:</label>
+                            <select id="university-name" name="university-name">
+                                <option value="">Select</option>
+                                <option value="FAST">Fast</option>
+                                <option value="LUMS">LUMS</option>
+                                <option value="NUST">NUST</option>
+                                <option value="Quaid-i-Azam University">Quaid-i-Azam University</option>
+                            </select>
+                        </div>
+                        <div class="resume-builder__field" >
+                            <label for="graduation-year" class="labl">
+                                Year of Completion:</label>
+                            <select id="graduation-year" name="graduation-year">
+                                <option value="">Select</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                            </select>
+                        </div>
                     </div>
+
+                   <div class="resume-builder__education-item">
                     <div class="resume-builder__field">
-                        <label for="graduation-year">Graduation Year:</label>
-                        <input type="number" id="graduation-year" name="graduation-year">
+                        <label for="gradaution-degree" class="heading2">Graduation</label>
                     </div>
+                    <div class="resume-builder__field" >
+                        <label for="degree" class="labl">Degree:</label>
+                        <select id="degree" name="degree">
+                            <option value="">Select:</option>
+                            <option value="Engineering-Technology">Engineering and Technology</option>
+                            <option value="ms">MS</option>
+                            <option value="mba">MBA</option>
+                            <option value="mph">MPH</option>
+                            <option value="mit">MIT</option>
+                            <option value="llm">LLM</option>
+                            <option value="mphil">MPhil</option>
+                        </select>
+                    </div>
+                    <div class="resume-builder__field" class="labl">
+                        <label for="university-name" class="labl">University Name:</label>
+                        <select id="university-name" name="university-name">
+                            <option value="">Select</option>
+                            <option value="LUMS">LUMS</option>
+                            <option value="FAST">Fast</option>
+                            <option value="NUST">NUST</option>
+                            <option value="IBA">IBA</option>
+                            <option value="PU">PU</option>
+                            <option value="AKU">AKU</option>
+                            <option value="KU">KU</option>
+                            <option value="PIEAS">PIEAS</option>
+                            <option value="Quaid-i-Azam University">Quaid-i-Azam University</option>
+
+                        </select>
+                    </div>
+                    <div class="resume-builder__field" class="labl">
+                        <label for="graduation-year" class="labl">
+                            Year of Completion:</label>
+                        <select id="graduation-year" name="graduation-year">
+                            <option value="">Select</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                        </select>
+                    </div>
+                   </div>
+                    
                 </div>
                 <div class="resume-builder__section">
-                    <h2>Skills</h2>
+                    <h2 class="header">Skills</h2>
                     <div class="resume-builder__field" id="skills">
-                        <label for="skills">Skills:</label>
-                        <input type="text" id="skills" name="skills" placeholder="e.g. HTML, CSS, JavaScript">
+                        <br>
+                        <label for="technical-skills" class="skil">Technical Skills:</label>
+                        <div class="skill-category">
+                            <br>
+                            <label for="programming-language">Programming Language:</label>
+                            <br>
+                            <div class="skill-options">
+                                <label for="java" class="labl" >Javascript</label>
+                                <input type="checkbox" id="Javascript" name="Javascript" value="Javascript">
+                                <label for="python" class="labl">Python</label>
+                                <input type="checkbox" id="python" name="python" value="Python">
+                                <label for="angular" class="labl">TypeScript</label>
+                                <input type="checkbox" id="TypeScript" name="TypeScript" value="TypeScript">
+
+                            </div>
+                        </div><br>
+                        <div class="skill-category">
+                            <label for="web-development">Web Development:</label>
+                            <div class="skill-options">
+                                <label for="front-end" class="labl">Front-end</label>
+                                <input type="checkbox" id="front-end" name="front-end" value="Front-end">
+                                <label for="back-end" class="labl">Back-end</label>
+                                <input type="checkbox" id="back-end" name="back-end" value="Back-end">
+                                <label for="full-stack " class="labl">Full-stack</label>
+                                <input type="checkbox" id="full-stack" name="full-stack" value="Full-stack">
+                            </div>
+                        </div><br>
+                        <div class="skill-category">
+                            <label for="data-analysis">Data Analysis:</label>
+                            <div class="skill-options">
+                                <label for="excel" class="labl">Excel</label>
+                                <input type="checkbox" id="excel" name="excel" value="Excel">
+                                <label for="sql" class="labl">SQL</label>
+                                <input type="checkbox" id="sql" name="sql" value="SQL">
+                                <label for="tableau" class="labl">Tableau</label>
+                                <input type="checkbox" id="tableau" name="tableau" value="Tableau">
+                            </div>
+                        </div>
+                        <br>
+                        <label for="soft-skills" class="skil">Soft Skills:</label>
+                        <div class="skill-category">
+                            <div class="skill-options">
+                                <input type="checkbox" id="effective-communication" name="effective-communication" value="Effective Communication">
+                                <label for="effective-communication" class="labl">Effective Communication</label>
+                                <input type="checkbox" id="effective-communication" name="effective-communication" value="Effective Communication">
+                                <label for="team-collaboration" class="labl">Team Collaboration</label>
+                                <input type="checkbox" id="problem-solving" name="problem-solving" value="Problem Solving">
+                                <label for="problem-solving" class="labl">Problem Solving</label>
+                                <input type="checkbox" id="adaptability" name="adaptability" value="Adaptability">
+                                <label for="adaptability" class="labl">Adaptability</label>
+                            </div>
+                        </div>
                     </div>
                     <button class="toggle-skills" id="toggle-skills" onclick="toggleSkills()">Hide Skills</button>
                 </div>
                 <div class="resume-builder__section">
-                    <h2>Experience</h2>
+                    <h2 class="header">Experience</h2>
                     <div class="resume-builder__field">
                         <label for="job-title">Job Title:</label>
                         <input type="text" id="job-title" name="job-title">
@@ -72,8 +255,8 @@
                 </div>
 
             </div>
+              <button type="submit" class="submit-button">Submit</button>
         </div>
-        
     </div>
 
     <script src="script.js" defer></script>
